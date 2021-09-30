@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*, *:after, *:before{
+margin: 0%;
+padding: 0%;
+}
+
+body {
+
+    margin: 0;
+    font-family:'Roboto', sans-serif;
+    
+  }
+
+.navbar{ 
+  margin: 0 auto;
+  padding:1rem 5px;
+  background-color: rgb(98, 124, 153);
+  
+ 
+}
+/*.toplogo{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  width: 2%;
+}*/
+
+
+.navbar ul{
+  list-style-type:none;
+    display: flex;
+    position: relative;
+    background-color: rgb(98, 124, 153);
+  
+    text-decoration: none;
+    font-size:small;
+    color:aliceblue;
+    font-style:normal;
+    justify-content: flex-end;
+    
+    
+  }
+  
+ 
+    .navbar ul li a {
+      
+        display: flex;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        position: relative;
+        
+    }
+    ul.navbar li a:hover:not(.active) {
+        background-color: rgb(37, 85, 141);}
+    ul.navbar li a.active {
+        background-color: #094088;
+    }
+   
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+        .row {   
+          flex-direction: column;
+        }
+      }
+      /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  /*footer*/
+  .bottom{
+    margin: 0 auto;
+  padding:1rem 5px;
+
+  background-color: rgb(98, 124, 153);
+  color:white;
+  text-align: center;
+  
+
+  }
+/*
+  .bottom ul{
+
+    list-style-type:none;
+    
+    display: flex;
+    background-color: rgb(98, 124, 153);
+    color:white;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    text-decoration:none;
+    justify-content:center;
+    row-gap: 10px;
+    
+  }
+  
+.bottom ul li a{
+ 
+ display:flex;
+ height: 30px;
+ width: 10%;
+ position: relative;
+ 
+}*/
+  
+    /* Header logo Title */
+.header {
+    padding: 1px;
+    text-align: center;
+    background: white;
+   
+  }
+
+  
+  /* center logo */
+  .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+.social img{
+margin: 1%;
+
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  color:dimgray;
+
+}
+
+
+
+/*index pic1*/
+
+.pic1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 80%;
+  height:80%;;
+  
+}
+/* centered text homepage*/
+.centered{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size:xx-large;  
+font-stretch:wider;
+}
+@media screen and (min-width: 930px){
+ .centered{
+   font-size:large;
+   margin:0 auto;
+ }
+
+
+}
+  
+
+/*top row */
+.top {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: white; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+/* Main row */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 50px; /* Some padding */
+  align-content: center;
+}
+
+h2{
+  color: dimgray;
+  align-content: center;
+  padding: 3rem 30%;
+  margin: auto;
+  text-align: center;
+  font-weight: 900;
+}
+.cards{
+ display: flex;
+ justify-content: space-around;
+ padding: 30px;
+ margin-right: 4px;
+ 
+}
+
+.card{
+  display: flex;
+  background-color:rgba(182, 180, 185, 0.986);
+  color: white;
+  max-width: 15%;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  font-size:smaller;
+  font-weight:500;
+  
+}
+.card img{
+  max-width: 50%;
+}
+h4{
+font-size: larger;
+
+}
+.myItem{ 
+  display: flex;
+  background-color: rgb(70, 69, 83);
+  color: white;
+  width: 150px;
+  margin: auto;
+    padding:1rem 5%;
+  border-radius:1em;
+justify-content: center;
+  font-weight: 600;
+}
+.programme{
+
+  display: flex;
+  background-color: white;
+  color: dimgray;
+  align-content: center;
+    padding: 3rem 30%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size:xx-large;
+
+}
+#content1::after{
+  content: "\a";
+  white-space: pre;
+}    
+#content2::before{
+  content: "\a";
+  white-space: pre;
+}
+/*About Page*/
+
+
+h5{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: dimgray;
+}
+/*p{
+  line-height: 1.25rem;
+  color: dimgray;
+}*/
+
+.text{
+  padding: 3rem 5%;
+}
+.flex img{
+  object-fit: cover;
+}
+.flex{
+  flex-direction: column;
+}
+.space-between{
+  justify-content: space-between;
+}
+.row-reverse{
+  flex-direction: row-reverse;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Conventional mobile breakpoint is 768px */
+
+@media screen and (max-width: 870px) {
+  .cards {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card {
+    width: 80%;
+    margin: 2rem auto;
+  }
+
+  .card img {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 505px){
+.flex-thirds > *:first-child, .flex-thirds > *:last-child{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-thirds img{
+  max-height: 300;
+  object-fit: cover;
+}
+}
+
+
+
+
