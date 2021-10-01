@@ -139,7 +139,6 @@ body {
 .social img{
   
 margin: 1%;
-
 width: 3%;
  
 }
@@ -147,9 +146,14 @@ width: 3%;
 .row {  
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
-  color:dimgray;
 
+  color:dimgray;
+  flex-direction: column;
+   align-items: center;
+}
+.center text{
+  text-align: center;
+  color: dimgray;
 }
 
 
@@ -199,16 +203,18 @@ main{
 }
 /*top row */
 .top {
-  flex: 30%; /* Set the width of the sidebar */
+ 
   background-color: white; /* Grey background color */
   padding: 20px; /* Some padding */
+  text-align: start;
 }
 /* Main row */
-.map {
+.map img {
   flex: 70%; /* Set the width of the main content */
   background-color: white; /* White background color */
   padding: 50px; /* Some padding */
   align-content: center;
+  width: 80%;
 }
 .text h2{
 
