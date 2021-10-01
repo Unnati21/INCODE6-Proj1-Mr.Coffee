@@ -19,14 +19,6 @@ body {
   
  
 }
-/*.toplogo{
-  display: flex;
-  position: relative;
-  justify-content: left;
-  width: 2%;
-}*/
-
-
 .navbar ul{
   list-style-type:none;
     display: flex;
@@ -88,32 +80,7 @@ body {
     color:white;
 
   }
-/*
-  .bottom ul{
 
-    list-style-type:none;
-    
-    display: flex;
-    background-color: rgb(98, 124, 153);
-    color:white;
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-    text-decoration:none;
-    justify-content:center;
-    row-gap: 10px;
-    
-  }
-  
-.bottom ul li a{
- 
- display:flex;
- height: 30px;
- width: 10%;
- position: relative;
- 
-}*/
   
     /* Header logo Title */
 .header {
@@ -187,14 +154,10 @@ width: 3%;
   height:80%;;
   
 }
-@media screen and (min-width: 930px){
- .centered{
-   font-size:large;
-   margin:0 auto;
- }
 
 
-}
+
+
   
 main{
   padding: 3rem 5%;
@@ -245,6 +208,12 @@ main{
   font-size:smaller;
   font-weight:500;
   
+}
+
+.card p{
+  color: white;
+  font-size:small;
+  font-weight:500;
 }
 .card img{
   max-width: 50%;
@@ -305,7 +274,7 @@ justify-content: center;
 
 
 h5{
-  font-size: 2rem;
+  font-size: 1.50rem;
   margin-bottom: 1rem;
   color: dimgray
 }
@@ -365,34 +334,112 @@ p{
 
 /* RESPONSIVE DESIGN */
 
-/* Conventional mobile breakpoint is 768px */
+/* Conventional mobile breakpoint is 500px */
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 505px) {
   .cards {
     flex-direction: column;
     margin: 0;
   }
 
   .card {
-    width: 80%;
+    max-width: none;
     margin: 2rem auto;
   }
 
   .card img {
     width: 100px;
+    max-width: 30%;
+  }
+  .text h2{
+    font-size: small;
   }
 }
-@media screen and (max-width: 505px){
+@media screen and (max-width:425px){
 .flex-thirds > *:first-child, .flex-thirds > *:last-child{
-  width: 80%;
-  margin: 0 auto;
-}
 
+  margin: 0 auto;
+  font-size: 1rem;
+  flex-direction: column;
+ 
+}
 .flex-thirds img{
-  max-height: 300;
+  max-height: 300px;
   object-fit: cover;
 }
 }
+
+@media screen and(max-width:768px) {
+  .space-between {
+    font-size:1rem;
+    flex-direction: column;
+  }
+  
+}
+
+h6{
+  color: dimgray;
+  font-size: x-large;
+}
+@media screen and(max-width:768px) {
+  .h6{
+    font-size: smaller;
+  }
+  
+}
+@media screen and (max-width:500px) {
+ .navbar{ 
+   
+    flex-direction: column;
+ }
+ .navbar ul{
+  align-items: center;
+  flex-direction: column;
+
+ }
+}
+@media screen and(max-width:505px) {
+  .centered h1 {
+    position: absolute;
+    font-size: smaller;
+    top: 15%;
+    left: 25%;
+  }
+  
+}
+@media screen and (max-width:505px){
+.programme{
+   font-size: small;
+}
+
+}
+@media screen and (max-width:505px) {
+  .open h4{
+    font-size: smaller;
+  }
+  
+}
+@media screen and (max-width:505px) {
+  .paragraph{
+    font-size:x-small;
+    text-align: left;
+  }
+  
+}
+@media screen and (max-width:505px) {
+  .paragraph1{
+   font-size: x-small;
+   margin:5%
+  }
+  .paragraph2{
+font-size: x-small;
+margin:5%
+  }
+  .bottom p{
+    font-size: x-small;
+  }
+}
+
 
 
 
