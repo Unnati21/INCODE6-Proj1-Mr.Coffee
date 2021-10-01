@@ -84,6 +84,10 @@ body {
   
 
   }
+  .bottom p{
+    color:white;
+
+  }
 /*
   .bottom ul{
 
@@ -121,16 +125,23 @@ body {
 
   
   /* center logo */
-  .img {
+  img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 15%;
+  width: 50%;
 }
-
+.social{
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+}
 .social img{
+  
 margin: 1%;
 
+width: 3%;
+ 
 }
 
 .row {  
@@ -143,26 +154,34 @@ margin: 1%;
 
 
 
-/*index pic1*/
 
-.pic1{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-  width: 80%;
-  height:80%;;
-  
-}
 /* centered text homepage*/
 .centered{
-  position: absolute;
+  position: relative;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   color:white;
-  font-size:xx-large;  
-font-stretch:wider;
+   
+
+}
+.centered h1{
+  position: absolute;
+  font-size: large;
+  top: 30%;
+  left: 30%;
+}
+/*index pic1*/
+
+.centered img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30%;
+  margin-bottom: -15%;
+  width: 80%;
+  height:80%;;
+  
 }
 @media screen and (min-width: 930px){
  .centered{
@@ -173,7 +192,11 @@ font-stretch:wider;
 
 }
   
-
+main{
+  padding: 3rem 5%;
+  max-width: 1080px;
+  margin:0 auto;
+}
 /*top row */
 .top {
   flex: 30%; /* Set the width of the sidebar */
@@ -181,20 +204,20 @@ font-stretch:wider;
   padding: 20px; /* Some padding */
 }
 /* Main row */
-.main {
+.map {
   flex: 70%; /* Set the width of the main content */
   background-color: white; /* White background color */
   padding: 50px; /* Some padding */
   align-content: center;
 }
+.text h2{
 
-h2{
   color: dimgray;
-  align-content: center;
-  padding: 3rem 30%;
-  margin: auto;
-  text-align: center;
-  font-weight: 900;
+    align-content: center;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    font-weight: 900;
 }
 .cards{
  display: flex;
@@ -263,22 +286,33 @@ justify-content: center;
 h5{
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: dimgray;
+  color: dimgray
 }
-/*p{
+
+p{
   line-height: 1.25rem;
   color: dimgray;
-}*/
+}
+
 
 .text{
-  padding: 3rem 5%;
+  margin: 0%;
+  padding: 0%;
 }
 .flex img{
   object-fit: cover;
 }
 .flex{
-  flex-direction: column;
+  display: flex;
 }
+
+.flex-thirds > *:first-child{
+ width: 60%;
+}
+.flex-thirds > *:last-child{
+  width:30%
+}
+
 .space-between{
   justify-content: space-between;
 }
